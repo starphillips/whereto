@@ -2850,7 +2850,30 @@ section,
   font-size: 14px;
 }
 
-.logo-img {
-  height: 60px; /* or any desired size */
-  width: auto;
+.global-bg {
+  position: relative;
+  background-image: url('../img/maastricht.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  isolation: isolate; /* ensures z-index works safely */
 }
+
+/* This targets each direct child section inside global-bg */
+.global-bg > section {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1); /* optional tint per section */
+}
+
+/* Overlay layer */
+.global-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* ← adjustable dark overlay */
+  z-index: 0;
+  pointer-events: none;
+}
+
