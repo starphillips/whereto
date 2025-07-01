@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #008374; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #0D0F12; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #0D0F12; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -402,7 +402,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-color);
+    color: var(--nav-hover-color);
   }
 
   .navmenu .dropdown ul {
@@ -939,7 +939,8 @@ section,
 }
 
 .hero .btn-get-started:hover {
-  border-color: color-mix(in srgb, var(--default-color), transparent 60%);
+  border-color: #FF007A;
+  color: #FF007A;
 }
 
 .hero .btn-watch-video {
@@ -959,7 +960,7 @@ section,
 }
 
 .hero .btn-watch-video:hover i {
-  color: var(--default-color);
+  color: #FF007A;
 }
 
 @media (max-width: 640px) {
@@ -997,11 +998,13 @@ section,
   background: var(--background-color);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
+  border-color: #e7eaf0;
   border-radius: 8px;
   z-index: 1;
   height: 100%;
   width: 100%;
   text-align: center;
+  border: 2px solid #ffffff;
 }
 
 .hero .icon-box .title {
@@ -1011,7 +1014,7 @@ section,
 }
 
 .hero .icon-box .title a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: #ffffff;
   transition: 0.3s;
 }
 
@@ -1022,11 +1025,12 @@ section,
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: #ffffff;
 }
 
 .hero .icon-box:hover {
-  background-color: color-mix(in srgb, var(--background-color), white 10%);
+  background-color: color-mix(in srgb, #FF007A, white 10%);
+  border: 2px solid #FF007A;
 }
 
 .hero .icon-box:hover .title a,
