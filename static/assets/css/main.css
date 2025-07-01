@@ -61,6 +61,15 @@
   --contrast-color: #ffffff;
 }
 
+.box-background {
+  --background-color: #e7eaf0;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --accent-color: #ffffff;
+  --surface-color: #00b6a1;
+  --contrast-color: #ffffff;
+}
+
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -977,8 +986,7 @@ section,
     left: 0;
     right: 0;
     height: calc(50% + 20px);
-    background-color: var(--default-color);
-    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    background-color: #0D0F12;
   }
 }
 
