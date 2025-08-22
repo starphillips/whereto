@@ -874,6 +874,8 @@ section,
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
+  color: #ffff;
+  text-shadow: 0 0 8px #000;
 }
 
 .section-title h2:after {
@@ -891,6 +893,8 @@ section,
 
 .section-title p {
   margin-bottom: 0;
+  color: #ffff;
+  text-shadow: 0 0 8px #000;
 }
 
 /*--------------------------------------------------------------
@@ -1911,6 +1915,17 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+body.contact-page section {
+  background-color: #0D0F12; /* black */
+  color: #fff;
+}
+
+body.contact-page .section-title h2,
+body.contact-page .section-title p {
+  color: #ffffff; /* or another colour if you want */
+}
+
 .contact .info-container {
   background-color: var(--accent-color);
   height: 100%;
@@ -2864,7 +2879,7 @@ section,
 
 .global-bg {
   position: relative;
-  /* background-image: url('../img/maastricht.png'); */
+  background-image: url('../img/maastricht.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2872,11 +2887,12 @@ section,
   isolation: isolate; /* ensures z-index works safely */
 }
 
+
 /* This targets each direct child section inside global-bg */
 .global-bg > section {
   position: relative;
   z-index: 1;
-  background-color:#d18dae; /* optional tint per section */
+  background-color: rgba(255, 255, 255, 0.1); 
 }
 
 /* Overlay layer */
@@ -2888,4 +2904,14 @@ section,
   z-index: 0;
   pointer-events: none;
 }
+
+/* .map-bg {
+  position: relative;
+  background-image: url('../img/maastricht.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  isolation: isolate; /* ensures z-index works safely */
+
 
