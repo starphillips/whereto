@@ -2864,7 +2864,7 @@ section,
 
 .global-bg {
   position: relative;
-  background-image: url('../img/maastricht.png');
+  /* background-image: url('../img/maastricht.png'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2876,7 +2876,7 @@ section,
 .global-bg > section {
   position: relative;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1); /* optional tint per section */
+  background-color:#d18dae; /* optional tint per section */
 }
 
 /* Overlay layer */
