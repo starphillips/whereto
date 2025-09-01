@@ -2877,6 +2877,11 @@ body.contact-page .section-title p {
   font-size: 14px;
 }
 
+body.about-page .about-bg {
+  background-color: #0D0F12; /* black */
+  color: #fff !important;
+}
+
 .global-bg {
   position: relative;
   background-image: url('../img/maastricht.png');
