@@ -212,17 +212,18 @@
       }
     })
   }
-  window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
 
-  document.addEventListener("DOMContentLoaded", function () {
+
+  window.addEventListener('load', function () {
     const urlParams = new URLSearchParams(window.location.search);
-    const filterClass = urlParams.get("filter");
+    const filterParam = urlParams.get('filter');
 
-    if (filterClass) {
-      const filterButton = document.querySelector(`.portfolio-filters li[data-filter=".${filterClass}"]`);
+    if (filterParam) {
+      const filterButton = document.querySelector(`.portfolio-filters li[data-filter='.${filterParam}']`);
       if (filterButton) {
-        filterButton.click(); // Trigger filter
+        setTimeout(() => {
+          filterButton.click();
+        }, 100);
       }
     }
   });
