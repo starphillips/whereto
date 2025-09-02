@@ -1772,11 +1772,12 @@ section,
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
+  color: white;
 }
 
 .faq .content p {
   font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: white;
 }
 
 .faq .faq-container .faq-item {
@@ -1823,6 +1824,7 @@ section,
 .faq .faq-container .faq-item .faq-content p {
   margin-bottom: 0;
   overflow: hidden;
+  color: black;
 }
 
 .faq .faq-container .faq-item .faq-toggle {
@@ -1924,6 +1926,14 @@ body.contact-page section {
 body.contact-page .section-title h2,
 body.contact-page .section-title p {
   color: #ffffff; /* or another colour if you want */
+}
+
+body.contact-page .contact a {
+  color: #ffffff;
+}
+
+body.contact-page .contact a:hover {
+  color: #cccccc; /* optional: slightly grey on hover */
 }
 
 .contact .info-container {

@@ -46,12 +46,12 @@
           <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">whereto@web.de</a></i>
           <!-- <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i> -->
         </div>
-        <!-- <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
-        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+            <!--<a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/whereto.mas/?utm_source=ig_web_button_share_sheet"><i class="bi bi-instagram"></i></a>
+            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+          </div>
       </div>
     </div><!-- End Top Bar -->
 
@@ -65,15 +65,21 @@
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html"  class="active">Home<br></a></li>
+            <li><a href="index.html">Home<br></a></li>
             <li><a href="about.html">About</a></li>
-            <li class="dropdown"><a href="categories.html"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="categories.html" class="active"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="categories.html?filter=filter-house">House</a></li>
                 <li><a href="categories.html?filter=filter-techno">Techno</a></li>
                 <li><a href="categories.html?filter=filter-pop">Pop</a></li>
                 <li><a href="categories.html?filter=filter-rb">R&B</a></li>
                 <li><a href="categories.html">Explore</a></li>
+              </ul>
+            <li class="dropdown"><a href="organisers.html"><span>Organisers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="organisers.html?filter=filter-org">Event Organisers</a></li>
+                <li><a href="organisers.html?filter=filter-venue">Venues</a></li>
+                <li><a href="organisers.html">Explore</a></li>
               </ul>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -143,7 +149,7 @@
                   <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">House Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -155,7 +161,7 @@
                   <img src="./static/assets/img/portfolio/house-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">House Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -166,7 +172,7 @@
                   <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Techno Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -177,7 +183,7 @@
                   <img src="./static/assets/img/portfolio/techno-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Techno Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -188,7 +194,7 @@
                   <img src="./static/assets/img/portfolio/rb-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">R&B Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">R&B Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -199,7 +205,7 @@
                   <img src="./static/assets/img/portfolio/rb-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">R&B Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">R&B Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -210,7 +216,7 @@
                   <img src="./static/assets/img/portfolio/pop-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Pop Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Pop Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -221,7 +227,7 @@
                   <img src="./static/assets/img/portfolio/pop-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Pop Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Pop Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -232,7 +238,7 @@
                   <img src="./static/assets/img/portfolio/house-3.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">House Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -240,10 +246,10 @@
           
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-techno">
               <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/techno-3.jpg" class="img-fluid" alt="App 1 image">
+                  <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Techno Event</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -251,10 +257,10 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pop">
               <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/app-1.jpg" class="img-fluid" alt="App 1 image">
+                  <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Event Name</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -262,10 +268,10 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rb">
               <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/app-1.jpg" class="img-fluid" alt="App 1 image">
+                  <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
+                  <h4><a href="event-page.html" title="More Details">Event Name</a></h4>
                   <p>Text about event</p>
                 </div>
               </div>
@@ -320,7 +326,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Us</h3>
-                  <p>whereto@web.de</p>
+                  <p><span><a href="mailto:contact@example.com">whereto@web.de</a></span></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -328,7 +334,7 @@
                 <i class="bi bi-instagram"></i>
                 <div>
                   <h3>Follow Us</h3>
-                  <p>@whereto</p>
+                  <p><a href="https://www.instagram.com/whereto.mas/?utm_source=ig_web_button_share_sheet">@whereto.maas</a></p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -385,12 +391,12 @@
             <span class="sitename">Where To?</span>
           </a>
           <p>Never miss a good event again.</p>
-          <!-- <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div> -->
+           <div class="social-links d-flex mt-4">
+            <!--<a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/whereto.mas/?utm_source=ig_web_button_share_sheet"><i class="bi bi-instagram"></i></a>
+            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
+          </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">

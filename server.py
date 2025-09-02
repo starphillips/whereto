@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for, request, redirect
 import csv
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask(__name__)
 
