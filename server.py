@@ -1,10 +1,13 @@
-from flask import Flask, render_template, url_for, request, redirect
-import csv
+from flask import Flask, request, Response, render_template
+import os, re, asyncio
 from dotenv import load_dotenv
+import httpx
+
 load_dotenv()
-
 app = Flask(__name__)
+app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY", "dev")
 
+EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 @app.route('/')
 def my_home():
@@ -26,15 +29,36 @@ def write_to_csv(data):
         csv_writer.writerow([name, email, message])
 
 
-@app.route('/submit_form', methods=['POST', 'GET'])
-def submit_form():
-    if request.method == 'POST':
-        try:
-            data = request.form.to_dict()
-            write_to_csv(data)
-            print(data)
-            return redirect('thankyou.html')
-        except:
-            return 'Unable to save to database'
-    else:
-        return 'Error in Sending. Please try again.'
+# This route replaces contact.php (same path so your frontend JS works)
+@app.post("/forms/contact.php")
+def contact_php():
+    name = (request.form.get("name") or "").strip()
+    email = (request.form.get("email") or "").strip()
+    subject = (request.form.get("subject") or "").strip()
+    message = (request.form.get("message") or "").strip()
+
+    if not name or not subject or not message or not EMAIL_RE.match(email):
+        return Response("Please complete all fields with a valid email.", status=400, mimetype="text/plain")
+
+    body = (
+        "New contact form submission\n\n"
+        f"Name: {name}\nEmail: {email}\nSubject: {subject}\n\nMessage:\n{message}\n"
+    )
+
+    try:
+        asyncio.run(
+            send_via_sendgrid(
+                subject=f"[Where To?] {subject}",
+                text=body,
+                to_email=os.environ["EMAIL_TO"],
+                from_email=os.environ["EMAIL_FROM"],
+            )
+        )
+        # IMPORTANT: php-email-form expects plain "OK" on success
+        return Response("OK", mimetype="text/plain")
+    except Exception as e:
+        app.logger.exception("Email send failed")
+        return Response("Failed to send email.", status=502, mimetype="text/plain")
+
+if __name__ == "__main__":
+    app.run(debug=True)
