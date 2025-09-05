@@ -291,7 +291,7 @@
     
 
 
-        <!-- Contact Section -->
+       <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -343,30 +343,30 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+            <form action="/submit_form" method="post" class="contact-email-form" data-aos="fade" data-aos-delay="100">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="contact-email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" id="contact-message" rows="8" placeholder="Message" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                <div>
                   <button type="submit">Send Message</button>
                 </div>
 

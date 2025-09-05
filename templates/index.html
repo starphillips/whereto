@@ -100,8 +100,8 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2><span>Explore events near you</span></h2>
-            <p>Every event for every occassion.</p>
+            <h2><span>Explore Maas Events</span></h2>
+            <p>Latest events found all in one place.</p>
             <div class="d-flex">
               <a href="categories.html" class="btn-get-started">Explore More</a>
               <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
@@ -341,66 +341,66 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-buildings"></i>
               </div>
-              <h3>Complex</h3>
-              <p>Amazing club.</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <h3>Location Name</h3>
+              <p>About the location</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-buildings"></i>
               </div>
               <h3>Location Name</h3>
-              <p>About the location/ category etc...</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <p>About the location etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-easel"></i>
+                <i class="bi bi-buildings"></i>
               </div>
               <h3>Location Name</h3>
               <p>About the location/ category etc...</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
+                <i class="bi bi-buildings"></i>
               </div>
               <h3>Location Name</h3>
               <p>About the location/ category etc...</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
+                <i class="bi bi-buildings"></i>
               </div>
               <h3>Location Name</h3>
               <p>About the location/ category etc...</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item position-relative">
               <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
+                <i class="bi bi-buildings"></i>
               </div>
               <h3>Location Name</h3>
               <p>About the location/ category etc...</p>
-              <a href="service-details.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -410,7 +410,7 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Contact Section -->
+       <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -462,30 +462,30 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+            <form action="/submit_form" method="post" class="contact-email-form" data-aos="fade" data-aos-delay="100">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" class="form-control" id="contact-name" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="contact-email" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="contact-subject" name="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea>
+                  <label for="message">Message</label>
+                  <textarea class="form-control" name="message" id="contact-message" rows="8" placeholder="Message" required=""></textarea>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
+                <div>
                   <button type="submit">Send Message</button>
                 </div>
 

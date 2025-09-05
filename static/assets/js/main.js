@@ -228,4 +228,36 @@
     }
   });
 
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a.reply');
+    if (!link) return;
+
+    e.preventDefault();
+    const parentId = link.getAttribute('data-reply-to');
+    const replyName = link.getAttribute('data-reply-name') || 'comment';
+
+    const parentInput = document.getElementById('parent_id');
+    const banner = document.getElementById('replying-banner');
+    const nameSpan = document.getElementById('replying-name');
+
+    if (parentInput && banner && nameSpan) {
+      parentInput.value = parentId;
+      nameSpan.textContent = replyName;
+      banner.style.display = '';
+      document.getElementById('comment-form').scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+
+  document.addEventListener('click', function (e) {
+    if (e.target && e.target.id === 'cancel-reply') {
+      const parentInput = document.getElementById('parent_id');
+      const banner = document.getElementById('replying-banner');
+      if (parentInput && banner) {
+        parentInput.value = '';
+        banner.style.display = 'none';
+      }
+    }
+  });
+
+
 })();

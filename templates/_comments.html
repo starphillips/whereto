@@ -1,0 +1,105 @@
+{# templates/_comments.html #}
+<section id="blog-comments" class="blog-comments section">
+  <div class="container">
+    <h4 class="comments-count">Comments</h4>
+
+    {% set roots = comments.roots if comments else [] %}
+    {% set replies = comments.replies if comments else {} %}
+
+    {% for c in roots %}
+      <div id="comment-{{ c.id }}" class="comment mb-3">
+        <div class="d-flex">
+          <div>
+            <h5>
+              {% if c.social_url %}
+                <a href="{{ c.social_url }}" target="_blank" rel="noopener">{{ c.name|e }}</a>
+              {% else %}
+                {{ c.name|e }}
+              {% endif %}
+              <a href="#comment-form" class="reply ms-2"
+                 data-reply-to="{{ c.id }}" data-reply-name="{{ c.name|e }}">
+                <i class="bi bi-reply-fill"></i> Reply
+              </a>
+            </h5>
+            <time datetime="{{ c.created_at.isoformat() }}">{{ c.created_at.strftime("%d %b, %Y %H:%M") }}</time>
+            <p class="mt-2">{{ c.text|e }}</p>
+          </div>
+        </div>
+
+        {% for r in replies.get(c.id, []) %}
+          <div id="comment-{{ r.id }}" class="comment comment-reply mt-3 ms-4">
+            <div class="d-flex">
+              <div>
+                <h5>
+                  {% if r.social_url %}
+                    <a href="{{ r.social_url }}" target="_blank" rel="noopener">{{ r.name|e }}</a>
+                  {% else %}
+                    {{ r.name|e }}
+                  {% endif %}
+                  <a href="#comment-form" class="reply ms-2"
+                     data-reply-to="{{ c.id }}" data-reply-name="{{ r.name|e }}">
+                    <i class="bi bi-reply-fill"></i> Reply
+                  </a>
+                </h5>
+                <time datetime="{{ r.created_at.isoformat() }}">{{ r.created_at.strftime("%d %b, %Y %H:%M") }}</time>
+                <p class="mt-2">{{ r.text|e }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <p>No comments yet. Be the first!</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="comment-form" class="comment-form section">
+  <div class="container">
+    <form method="post" action="{{ url_for('post_comment', thread=thread) }}">
+      <h4>Post Comment</h4>
+      <p>Optional: add your socials, creating a link on your name, for others to find you! 
+        <br>
+       If adding your socials: PLEASE use the link. e.g. On Instagram App -  Your Profile Tab > Share Profile > Copy Link</p>
+
+
+      <!-- reply state -->
+      <input type="hidden" name="parent_id" id="parent_id">
+      <div id="replying-banner" class="small text-muted mb-2" style="display:none;">
+        Replying to <span id="replying-name"></span>
+        <button type="button" class="btn btn-link p-0 ms-2" id="cancel-reply">Cancel</button>
+      </div>
+
+      <!-- honeypot -->
+      <div style="position:absolute;left:-9999px;">
+        <label>Leave empty</label>
+        <input type="text" name="website" autocomplete="off">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input name="name" type="text" class="form-control" placeholder="Your Name*" required>
+        </div>
+        <div class="col-md-6 form-group">
+          <input name="social" type="text" class="form-control" placeholder="Social link (optional)">
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col form-group">
+          <textarea name="comment" class="form-control" placeholder="Your Comment*" rows="4" required></textarea>
+        </div>
+      </div>
+
+      {% with msgs = get_flashed_messages() %}
+        {% if msgs %}
+          <div class="alert alert-info mt-3">{{ msgs[0] }}</div>
+        {% endif %}
+      {% endwith %}
+
+      <div class="text-center mt-3">
+        <button type="submit" class="btn btn-primary">Post Comment</button>
+      </div>
+    </form>
+  </div>
+</section>
