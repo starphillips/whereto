@@ -29,7 +29,7 @@
 
 </head>
 
-<body class="contact-page">
+<body class="index-page">
 
   <header id="header" class="header fixed-top">
 
@@ -53,12 +53,12 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="./static/assets/img//logos/logo.png" alt="" class="logo-img">
+          <img src="./static/assets/img/logo2.png" alt="" class="logo-img">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home<br></a></li>
+            <li><a href="index.html"  class="active">Home<br></a></li>
             <li><a href="about.html">About</a></li>
             <li class="dropdown"><a href="categories.html"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
@@ -68,7 +68,7 @@
                 <li><a href="categories.html?filter=filter-rb">R&B</a></li>
                 <li><a href="categories.html">Explore</a></li>
               </ul>
-            <li class="dropdown"><a href="organisers.html"  class="active"><span>Organisers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="organisers.html"><span>Organisers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="organisers.html?filter=filter-org">Event Organisers</a></li>
                 <li><a href="organisers.html?filter=filter-venue">Venues</a></li>
@@ -93,195 +93,315 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2><span>Your favourite locations here</span></h2>
-            <p>Want your events featured?</p>
+            <h2><span>Explore Maas Events</span></h2>
+            <p>Latest events found all in one place.</p>
             <div class="d-flex">
-              <a href="contact.html" class="btn-get-started">Get in Touch</a>
+              <a href="categories.html" class="btn-get-started">Explore More</a>
               <!--<a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
             <a href="about.html">
-              <img src="./static/assets/img/logos/logo2.png" class="img-fluid" alt="Logo">
+              <img src="./static/assets/img/logoib.png" class="img-fluid" alt="Logo">
             </a>
           </div>
         </div>
       </div>
 
+      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-boombox"></i></div>
+                <h4 class="title"><a href="categories.html?filter=filter-house" class="stretched-link">House</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-volume-up"></i></div>
+                <h4 class="title"><a href="categories.html?filter=filter-techno" class="stretched-link">Techno</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-vinyl-fill"></i></div>
+                <h4 class="title"><a href="categories.html?filter=filter-rb" class="stretched-link">R&B</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-valentine"></i></div>
+                <h4 class="title"><a href="categories.html?filter=filter-pop" class="stretched-link">Pop</a></h4>
+              </div>
+            </div><!--End Icon Box -->
+
+          </div>
+        </div>
+      </div>
 
     </section><!-- /Hero Section -->
 
-        <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+
+  <div class="global-bg">
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Organisers in Maastricht</h2>
-        <p>Explore who keeps the nightlife alive!</p>
-        <p>We feature a range of venues and organisers operating in Maastricht.</p>
-      
+        <h2>Upcoming Events</h2>
+        <p>Check out what is going on in Maastricht</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="row gy-4">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">Explore All</li>
-            <li data-filter=".filter-venue">Venue</li>
-            <li data-filter=".filter-org">Event Organisers</li>
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
 
-          </ul><!-- End Portfolio Filters -->
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+              </div>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+              <p class="post-category">08 September 2025</p>
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                <a href="./static/assets/img/portfolio/house-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox">
-                  <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+              <h2 class="title">
+                <a href="event-page.html">White Party</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Complex</p>
+                  <p class="post-category"> Club Night </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                <a href="./static/assets/img/portfolio/house-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox">
-                  <img src="./static/assets/img/portfolio/house-2.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article>
+
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">16 September 2025</p>
+
+              <h2 class="title">
+                <a href="event-page.html">Pub Quiz</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Irish Pub</p>
+                  <p class="post-category"> Pub Night </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+            </article>
+          </div><!-- End post list item -->
+
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article>
+
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Date</p>
+
+              <h2 class="title">
+                <a href="event-page.html">Event Name</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Place</p>
+                  <p class="post-category"> Category </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/techno-2.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+            </article>
+          </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-5.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Date</p>
+
+              <h2 class="title">
+                <a href="event-page.html">Event Name</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Place</p>
+                  <p class="post-category"> Category </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/rb-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+            </article>
+          </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">Date</p>
+
+              <h2 class="title">
+                <a href="event-page.html">Event Name</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Place</p>
+                  <p class="post-category"> Category </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/rb-2.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+            </article>
+          </div><!-- End post list item -->
+
+                    <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article>
+
+              <div class="post-img">
+                <img src="./static/assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+              </div>
+
+              <p class="post-category">20 September 2025</p>
+
+              <h2 class="title">
+                <a href="event-page.html">Sport Social Night</a>
+              </h2>
+
+              <div class="d-flex align-items-center">
+                <img src="./static/assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta">
+                  <p class="post-author">Irish Pub</p>
+                  <p class="post-category"> Meet New People </p>
+                  </p>
                 </div>
               </div>
-            </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/pop-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
+            </article>
+          </div><!-- End post list item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/pop-2.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/house-3.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-          
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
-              <div class="portfolio-content h-100">
-                  <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
-                <hr style="margin: 10px 0;">
-                <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
-                </div>
-              </div>
-            </div> <!-- End Portfolio Item -->
-
-
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
+        </div><!-- End recent posts list -->
 
       </div>
 
-    </div>
+    </section><!-- /Recent Posts Section -->
 
-    </section><!-- /Portfolio Section -->
-    
+        <!-- Services Section -->
+    <section id="services" class="services section">
 
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Locations</h2>
+        <p>Explore new places in Maastricht</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location/ category etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location/ category etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location/ category etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-buildings"></i>
+              </div>
+              <h3>Location Name</h3>
+              <p>About the location/ category etc...</p>
+              <a href="ven-page.html" class="readmore stretched-link">Explore Events <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+  </div>
+
+    </section><!-- /Services Section -->
 
        <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -427,6 +547,9 @@
 
     <div class="container copyright text-center mt-4">
       <p>© <span>2025</span> <strong class="px-1 sitename">Where To?</strong> <span>All Rights Reserved</span></p>
+      <p class="map-attribution">
+        Map data © 2025 Apple, TomTom, OpenStreetMap contributors
+      </p>
     </div>
 
   </footer>
@@ -450,7 +573,6 @@
   <!-- Main JS File -->
   <script src="./static/assets/js/main.js"></script>
 
-
-</body>
+  </body>
 
 </html>

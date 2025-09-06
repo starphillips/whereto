@@ -53,14 +53,14 @@
       <div class="container position-relative d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
           <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="./static/assets/img//logos/logo.png" alt="" class="logo-img">
+          <img src="./static/assets/img/logo2.png" alt="" class="logo-img">
         </a>
 
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="index.html">Home<br></a></li>
             <li><a href="about.html">About</a></li>
-            <li class="dropdown"><a href="categories.html"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="categories.html" class="active"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="categories.html?filter=filter-house">House</a></li>
                 <li><a href="categories.html?filter=filter-techno">Techno</a></li>
@@ -68,7 +68,7 @@
                 <li><a href="categories.html?filter=filter-rb">R&B</a></li>
                 <li><a href="categories.html">Explore</a></li>
               </ul>
-            <li class="dropdown"><a href="organisers.html"  class="active"><span>Organisers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="organisers.html"><span>Organisers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="organisers.html?filter=filter-org">Event Organisers</a></li>
                 <li><a href="organisers.html?filter=filter-venue">Venues</a></li>
@@ -93,7 +93,7 @@
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-5 justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2><span>Your favourite locations here</span></h2>
+            <h2><span>Never miss a good time</span></h2>
             <p>Want your events featured?</p>
             <div class="d-flex">
               <a href="contact.html" class="btn-get-started">Get in Touch</a>
@@ -102,7 +102,7 @@
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
             <a href="about.html">
-              <img src="./static/assets/img/logos/logo2.png" class="img-fluid" alt="Logo">
+              <img src="./static/assets/img/logoib.png" class="img-fluid" alt="Logo">
             </a>
           </div>
         </div>
@@ -116,10 +116,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Organisers in Maastricht</h2>
-        <p>Explore who keeps the nightlife alive!</p>
-        <p>We feature a range of venues and organisers operating in Maastricht.</p>
-      
+        <h2>Events in Maastricht</h2>
+        <p>Explore events by categories..</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -128,143 +126,146 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">Explore All</li>
-            <li data-filter=".filter-venue">Venue</li>
-            <li data-filter=".filter-org">Event Organisers</li>
+            <li data-filter=".filter-house">House</li>
+            <li data-filter=".filter-techno">Techno</li>
+            <li data-filter=".filter-pop">Pop</li>
+            <li data-filter=".filter-rb">R&B</li>
+            <li data-filter=".filter-other">Others</li>
 
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-house">
               <div class="portfolio-content h-100">
                 <a href="./static/assets/img/portfolio/house-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox">
                   <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-house">
               <div class="portfolio-content h-100">
                 <a href="./static/assets/img/portfolio/house-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox">
                   <img src="./static/assets/img/portfolio/house-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-techno">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-techno">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/techno-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rb">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/rb-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">R&B Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rb">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/rb-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+                  <h4><a href="event-page.html" title="More Details">R&B Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pop">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/pop-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+                  <h4><a href="event-page.html" title="More Details">Pop Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pop">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/pop-2.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+                  <h4><a href="event-page.html" title="More Details">Pop Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-house">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/house-3.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+                  <h4><a href="event-page.html" title="More Details">House Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
           
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-org">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-techno">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Event Organiser</a></h4>
-                  <p>Text about Organisation</p>
+                  <h4><a href="event-page.html" title="More Details">Techno Event</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pop">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/house-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">Event Name</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-venue">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-rb">
               <div class="portfolio-content h-100">
                   <img src="./static/assets/img/portfolio/techno-1.jpg" class="img-fluid" alt="App 1 image">
                 <hr style="margin: 10px 0;">
                 <div class="portfolio-info">
-                  <h4><a href="ven-page.html" title="More Details">Venue Name</a></h4>
-                  <p>Text about venue</p>
+                  <h4><a href="event-page.html" title="More Details">Event Name</a></h4>
+                  <p>Text about event</p>
                 </div>
               </div>
             </div> <!-- End Portfolio Item -->
